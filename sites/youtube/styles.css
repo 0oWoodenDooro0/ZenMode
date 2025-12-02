@@ -1,0 +1,121 @@
+/* Header */
+
+/* Hide Sidebar Button */
+html[data-zm-yt_header_hideSidebarButton] yt-icon-button#guide-button {
+  display: none !important;
+}
+
+/* Hide Youtube Logo */
+html[data-zm-yt_header_hideYoutubeLogo] ytd-topbar-logo-renderer#logo {
+  display: none !important;
+}
+
+/* Hide Search Bar */
+html[data-zm-yt_header_hideSearchBar] yt-searchbox.ytd-masthead {
+  display: none !important;
+}
+
+/* Hide Mircophone Search Icon */
+html[data-zm-yt_header_hideMircophoneSearchIcon] #voice-search-button {
+  display: none !important;
+}
+
+/* Hide Create Icon */
+html[data-zm-yt_header_hideCreateIcon] #buttons ytd-button-renderer.ytd-masthead {
+  display: none !important;
+}
+
+/* Hide Notifications Icon */
+html[data-zm-yt_header_hideNotificationsIcon] #buttons ytd-notification-topbar-button-renderer.ytd-masthead {
+  display: none !important;
+}
+
+/* Hide Account Icon */
+html[data-zm-yt_header_hideAccountIcon] #buttons ytd-topbar-menu-button-renderer.ytd-masthead {
+  display: none !important;
+}
+
+/* Sidebar */
+
+/* Hide Home Button */
+html[data-zm-yt_sidebar_hideHomeButton] ytd-guide-entry-renderer:has(a[href="/"]),
+html[data-zm-yt_sidebar_hideHomeButton] ytd-mini-guide-entry-renderer:has(a[href="/"]) {
+  display: none !important;
+}
+
+/* Hide Shorts Button */
+html[data-zm-yt_sidebar_hideShortsButton] ytd-guide-entry-renderer:has(a[title="Shorts"]),
+html[data-zm-yt_sidebar_hideShortsButton] ytd-mini-guide-entry-renderer:has(a[href="/shorts/"]) {
+  display: none !important;
+}
+
+html[data-zm-yt_sidebar_hideHomeButton][data-zm-yt_sidebar_hideShortsButton] #sections ytd-guide-section-renderer:nth-child(1) {
+  display: none !important;
+}
+
+/* Hide Subscriptions Panel */
+html[data-zm-yt_sidebar_hideSubscriptionsPanel] ytd-guide-section-renderer:has(a[href="/feed/subscriptions"]),
+html[data-zm-yt_sidebar_hideSubscriptionsPanel] ytd-mini-guide-entry-renderer:has(a[href="/feed/subscriptions"]) {
+  display: none !important;
+}
+
+/* Hide You Button */
+html[data-zm-yt_sidebar_hideYouButton] ytd-guide-collapsible-section-entry-renderer #header:has(a[href="/feed/you"]),
+html[data-zm-yt_sidebar_hideYouButton] ytd-mini-guide-entry-renderer:has(a[href="/feed/you"]) {
+  display: none !important;
+}
+
+/* Hide History Button */
+html[data-zm-yt_sidebar_hideHistoryButton] ytd-guide-entry-renderer:has(a[href="/feed/history"]) {
+  display: none !important;
+}
+
+/* Hide Playlists Button */
+html[data-zm-yt_sidebar_hidePlaylistsButton] ytd-guide-entry-renderer:has(a[href="/feed/playlists"]) {
+  display: none !important;
+}
+
+/* Hide Watch Later Button */
+html[data-zm-yt_sidebar_hideWatchLaterButton] ytd-guide-entry-renderer:has(a[href="/playlist?list=WL"]) {
+  display: none !important;
+}
+
+/* Hide Liked Videos Button */
+html[data-zm-yt_sidebar_hideLikedVideosButton] ytd-guide-entry-renderer:has(a[href="/playlist?list=LL"]) {
+  display: none !important;
+}
+
+/* Hide Your Videos Button */
+html[data-zm-yt_sidebar_hideYourVideosButton] ytd-guide-entry-renderer:has(a[href*="studio.youtube.com"][href*="/videos"]) {
+  display: none !important;
+}
+
+/* Hide Downloads Button */
+html[data-zm-yt_sidebar_hideDownloadsButton] ytd-guide-entry-renderer:has(a[href="/feed/downloads"]) {
+  display: none !important;
+}
+
+html[data-zm-yt_sidebar_hideYouButton][data-zm-yt_sidebar_hideHistoryButton][data-zm-yt_sidebar_hidePlaylistsButton][data-zm-yt_sidebar_hideWatchLaterButton][data-zm-yt_sidebar_hideLikedVideosButton][data-zm-yt_sidebar_hideYourVideosButton][data-zm-yt_sidebar_hideDownloadsButton] #sections ytd-guide-section-renderer:has(a[href="/feed/you"]) {
+  display: none !important;
+}
+
+/* Hide Explore Panel */
+html[data-zm-yt_sidebar_hideExplorePanel] ytd-guide-section-renderer:has(a[href*="UC-9-kyTW8ZkZNDHQJ6FgpwQ"]) {
+  display: none !important;
+}
+
+/* Hide Youtube Panel */
+html[data-zm-yt_sidebar_hideYoutubePanel] ytd-guide-section-renderer:has(a[href="/premium"]) {
+  display: none !important;
+}
+
+/* Hide Settings Panel */
+html[data-zm-yt_sidebar_hideSettingsPanel] ytd-guide-section-renderer:has(a[href="/account"]) {
+  display: none !important;
+}
+
+/* Hide Footer */
+html[data-zm-yt_sidebar_hideFooter] #footer:has(#guide-links-primary) {
+  display: none !important;
+}
+
