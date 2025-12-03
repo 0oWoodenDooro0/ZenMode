@@ -5,8 +5,10 @@
   "description": "Customizable UI toggles for YouTube and other sites.",
   "permissions": [
     "storage",
-    "activeTab",
-    "scripting"
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
   ],
   "browser_specific_settings": {
     "gecko": {
@@ -32,18 +34,10 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "core/content.js"
-      ],
-      "run_at": "document_start"
-    },
-    {
-      "matches": [
         "*://*.youtube.com/*"
       ],
       "js": [
+        "core/content.js",
         "sites/youtube/main.js"
       ],
       "css": [
