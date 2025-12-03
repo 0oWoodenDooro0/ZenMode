@@ -1,3 +1,20 @@
+/* Home */
+
+/* Hide Tabs */
+html[data-zm-yt_home_hideTabs] #primary #header {
+  display: none !important;
+}
+
+/* Hide All Videos */
+html[data-zm-yt_home_hideAllVideos] #primary #contents.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* Hide Shorts */
+html[data-zm-yt_home_hideShorts] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer) {
+  display: none !important;
+}
+
 /* Header */
 
 /* Hide Sidebar Button */
@@ -116,6 +133,25 @@ html[data-zm-yt_sidebar_hideSettingsPanel] ytd-guide-section-renderer:has(a[href
 
 /* Hide Footer */
 html[data-zm-yt_sidebar_hideFooter] #footer:has(#guide-links-primary) {
+  display: none !important;
+}
+
+/* Search */
+
+/* Hide Shorts */
+html[data-zm-yt_search_hideShorts] grid-shelf-view-model {
+  display: none !important;
+}
+
+/* Hide People Also Search For */
+html[data-zm-yt_search_hidePeopleAlsoSearchFor] ytd-horizontal-card-list-renderer:has(ytd-search-refinement-card-renderer) {
+  display: none !important;
+}
+
+/* Subscriptions */
+
+/* Hide Shorts */
+html[data-zm-yt_subscriptions_hideShorts] ytd-rich-section-renderer:has(ytd-rich-shelf-renderer) {
   display: none !important;
 }
 

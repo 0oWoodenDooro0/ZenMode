@@ -7,6 +7,9 @@ const siteConfig = [
       {
         name: "Home",
         options: [
+          { id: "hideTabs", label: "Hide Tabs", default: false },
+          { id: "hideAllVideos", label: "Hide All Video", default: false },
+          { id: "hideShorts", label: "Hide Shorts", default: false },
         ]
       },
       {
@@ -43,6 +46,8 @@ const siteConfig = [
       {
         name: "Search",
         options: [
+          { id: "hideShorts", label: "Hide Shorts", default: false },
+          { id: "hidePeopleAlsoSearchFor", label: "Hide People Also Search For", default: false },
         ]
       },
       {
@@ -54,7 +59,13 @@ const siteConfig = [
         name: "Video",
         options: [
         ]
-      }
+      },
+      {
+        name: "Subscriptions",
+        options: [
+          { id: "hideShorts", label: "Hide Shorts", default: false },
+        ]
+      },
     ]
   }
 ];
