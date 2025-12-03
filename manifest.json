@@ -9,7 +9,13 @@
     "scripting"
   ],
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "512": "icons/icon512.png"
+    }
+  },
+  "icons": {
+    "512": "icons/icon512.png"
   },
   "content_scripts": [
     {
