@@ -51,16 +51,6 @@ const siteConfig = [
         ]
       },
       {
-        name: "Channel",
-        options: [
-        ]
-      },
-      {
-        name: "Video",
-        options: [
-        ]
-      },
-      {
         name: "Subscriptions",
         options: [
           { id: "hideShorts", label: "Hide Shorts", default: false },
