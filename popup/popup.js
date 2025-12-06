@@ -10,6 +10,7 @@ const siteConfig = [
           { id: "hideTabs", label: "Hide Tabs", default: false },
           { id: "hideAllVideos", label: "Hide All Video", default: false },
           { id: "hideShorts", label: "Hide Shorts", default: false },
+          { id: "hideAds", label: "Hide Ads", default: false },
         ]
       },
       {
@@ -27,9 +28,11 @@ const siteConfig = [
       {
         name: "Sidebar",
         options: [
+          { id: "hideHomePanel", label: "Hide Home Panel", default: false },
           { id: "hideHomeButton", label: "Hide Home Button", default: false },
           { id: "hideShortsButton", label: "Hide Shorts Button", default: false },
           { id: "hideSubscriptionsPanel", label: "Hide Subscriptions Panel", default: false },
+          { id: "hideYouPanel", label: "Hide You Panel", default: false },
           { id: "hideYouButton", label: "Hide You Button", default: false },
           { id: "hideHistoryButton", label: "Hide History Button", default: false },
           { id: "hidePlaylistsButton", label: "Hide Playlists Button", default: false },
@@ -48,6 +51,25 @@ const siteConfig = [
         options: [
           { id: "hideShorts", label: "Hide Shorts", default: false },
           { id: "hidePeopleAlsoSearchFor", label: "Hide People Also Search For", default: false },
+        ]
+      },
+      {
+        name: "Video",
+        options: [
+          { id: "hideTitle", label: "Hide Title", default: false },
+          { id: "hideSubscribersCount", label: "Hide Subscribers Count", default: false },
+          { id: "hideJoinButton", label: "Hide Join Button", default: false },
+          { id: "hideSubscribeButton", label: "Hide Subscribe Button", default: false },
+          { id: "hideSubscribedButton", label: "Hide Subscribed Button", default: false },
+          { id: "hideLikesDislikesButton", label: "Hide Likes/Dislikes Button", default: false },
+          { id: "hideShareButton", label: "Hide Share Button", default: false },
+          { id: "hideSaveButton", label: "Hide Save Button", default: false },
+          { id: "hideThanksButton", label: "Hide Thanks Button", default: false },
+          { id: "hideDownloadButton", label: "Hide Download Button", default: false },
+          { id: "hideReportButton", label: "Hide Report Button", default: false },
+          { id: "hideCollaspedButton", label: "Hide Collasped Button", default: false },
+          { id: "hideDescription", label: "Hide Descritption", default: false },
+          { id: "hideDescription", label: "Hide Descritption", default: false },
         ]
       },
       {
