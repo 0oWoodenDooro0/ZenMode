@@ -228,6 +228,41 @@ html[data-zm-yt_video_hideDescription] #bottom-row {
   display: none !important;
 }
 
+/* Hide Game And Category */
+html[data-zm-yt_video_hideGameAndCategory] #below ytd-metadata-row-container-renderer:has(#always-shown ytd-rich-metadata-row-renderer) {
+  display: none !important;
+}
+
+/* Hide Comments */
+html[data-zm-yt_video_hideComments] #comments {
+  display: none !important;
+}
+
+/* Hide Comments Avatars */
+html[data-zm-yt_video_hideCommentsAvatars] #comments #author-thumbnail-button {
+  display: none !important;
+}
+
+/* Hide Comments Replies */
+html[data-zm-yt_video_hideCommentsReplies] #comments #replies:has(ytd-comment-replies-renderer) {
+  display: none !important;
+}
+
+/* Hide Ad Panel */
+html[data-zm-yt_video_hideAdPanel] #secondary #player-ads {
+  display: none !important;
+}
+
+/* Hide Suggested Videos Tabs */
+html[data-zm-yt_video_hideSuggestedVideosTabs] #secondary ytd-watch-next-secondary-results-renderer #items yt-related-chip-cloud-renderer {
+  display: none !important;
+}
+
+/* Hide Suggested Videos */
+html[data-zm-yt_video_hideSuggestedVideos] #secondary ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
 /* Subscriptions */
 
 /* Hide Shorts */

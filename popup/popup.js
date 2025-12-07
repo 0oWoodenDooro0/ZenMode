@@ -69,7 +69,13 @@ const siteConfig = [
           { id: "hideReportButton", label: "Hide Report Button", default: false },
           { id: "hideCollaspedButton", label: "Hide Collasped Button", default: false },
           { id: "hideDescription", label: "Hide Descritption", default: false },
-          { id: "hideDescription", label: "Hide Descritption", default: false },
+          { id: "hideGameAndCategory", label: "Hide Game And Category", default: false },
+          { id: "hideComments", label: "Hide Comments", default: false },
+          { id: "hideCommentsAvatars", label: "Hide Comments Avatars", default: false },
+          { id: "hideCommentsReplies", label: "Hide Comments Replies", default: false },
+          { id: "hideAdPanel", label: "Hide Ad Panel", default: false },
+          { id: "hideSuggestedVideosTabs", label: "Hide Suggested Videos Tabs", default: false },
+          { id: "hideSuggestedVideos", label: "Hide Suggested Videos", default: false },
         ]
       },
       {
