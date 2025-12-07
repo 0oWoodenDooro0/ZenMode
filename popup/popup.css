@@ -1,16 +1,22 @@
+/* Import Fonts to match website */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
 body {
   width: 320px;
-  background-color: #f9f9f9;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Dark Theme Background (Slate-950) */
+  background-color: #020617; 
+  font-family: 'Inter', 'Noto Sans TC', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  /* Light Text (Slate-300) */
+  color: #cbd5e1; 
 }
 
 header {
-  background-color: #ffffff;
+  /* Dark Header (Slate-900) */
+  background-color: #0f172a;
   padding: 16px 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #1e293b; /* Slate-800 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,35 +26,37 @@ header h1 {
   font-size: 18px;
   margin: 0;
   font-weight: 600;
-  color: #2c3e50;
+  color: #f1f5f9; /* Slate-100 */
 }
 
 #site-name {
   font-size: 12px;
-  color: #888;
+  color: #64748b; /* Slate-500 */
   margin: 0;
   font-weight: 500;
 }
 
 main {
-  padding: 16px; /* 稍微調整 padding */
+  padding: 16px;
 }
 
-/* Category Styles (New) */
+/* Category Styles */
 .category-section {
-  background: white;
+  /* Card Background (Slate-900) */
+  background: #0f172a;
   margin-bottom: 12px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  overflow: hidden; /* 確保圓角不被子元素切掉 */
+  border-radius: 12px;
+  border: 1px solid #1e293b; /* Slate-800 */
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .category-header {
-  padding: 12px 16px;
-  font-size: 13px;
+  padding: 14px 16px;
+  font-size: 14px;
   font-weight: 600;
-  color: #555;
-  background-color: #fff;
+  color: #e2e8f0; /* Slate-200 */
+  background-color: #0f172a;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -58,24 +66,23 @@ main {
 }
 
 .category-header:hover {
-  background-color: #fafafa;
+  background-color: #1e293b; /* Hover Slate-800 */
 }
 
 .category-header .arrow {
   font-size: 10px;
   transition: transform 0.3s ease;
-  color: #999;
+  color: #64748b; /* Slate-500 */
 }
 
-/* 當父層有 expanded class 時，旋轉箭頭 */
 .category-header.expanded .arrow {
   transform: rotate(180deg);
 }
 
 .options-group {
   padding: 0 16px 12px 16px;
-  display: none; /* 預設隱藏 */
-  border-top: 1px solid #f5f5f5;
+  display: none;
+  border-top: 1px solid #1e293b; /* Slate-800 */
 }
 
 /* Option Items */
@@ -83,8 +90,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 0;
+  border-bottom: 1px solid #1e293b; /* Slate-800 */
 }
 
 .option-item:last-child {
@@ -94,9 +101,10 @@ main {
 .option-label {
   font-size: 14px;
   font-weight: 500;
+  color: #cbd5e1; /* Slate-300 */
 }
 
-/* Custom Toggle Switch */
+/* Custom Toggle Switch (Dark Mode) */
 .switch {
   position: relative;
   display: inline-block;
@@ -117,7 +125,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #334155; /* Inactive: Slate-700 */
   transition: .4s;
   border-radius: 34px;
 }
@@ -132,39 +140,47 @@ main {
   background-color: white;
   transition: .4s;
   border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 input:checked + .slider {
-  background-color: #4CAF50;
+  background-color: #10b981; /* Active: Emerald-500 */
 }
 
 input:checked + .slider:before {
   transform: translateX(18px);
 }
 
+/* Footer */
 footer {
   padding: 12px 20px;
-  background-color: #f9f9f9;
+  background-color: #020617; /* Slate-950 */
+  border-top: 1px solid #1e293b; /* Slate-800 */
   text-align: center;
-  /* border-top removed for cleaner look with cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
 #reset-btn {
   background: none;
   border: none;
-  color: #888;
+  color: #94a3b8; /* Slate-400 */
   font-size: 12px;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
+  padding: 0;
+  transition: color 0.2s;
 }
 
 #reset-btn:hover {
-  color: #555;
+  color: #f87171; /* Hover: Red-400 for reset */
 }
 
 .empty-state {
   text-align: center;
-  color: #999;
+  color: #64748b; /* Slate-500 */
   font-size: 13px;
   padding: 20px 0;
 }

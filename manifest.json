@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "ZenMode",
   "version": "1.1",
+  "homepage_url": "https://zenmode.woodendoor.website",
   "description": "Customizable UI toggles for YouTube and other sites.",
   "permissions": [
     "storage",
