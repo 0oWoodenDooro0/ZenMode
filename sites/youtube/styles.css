@@ -126,6 +126,11 @@ html[data-zm-yt_sidebar_hideDownloadsButton] ytd-guide-entry-renderer:has(a[href
   display: none !important;
 }
 
+/* Hide Clips Button */
+html[data-zm-yt_sidebar_hideClipsButton] #guide-content ytd-guide-collapsible-entry-renderer:has(#expanded) {
+  display: none !important;
+}
+
 /* Hide Explore Panel */
 html[data-zm-yt_sidebar_hideExplorePanel] ytd-guide-section-renderer:has(a[href*="UC-9-kyTW8ZkZNDHQJ6FgpwQ"]) {
   display: none !important;
