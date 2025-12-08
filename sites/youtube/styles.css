@@ -63,7 +63,9 @@ html[data-zm-yt_header_hideAccountIcon] #buttons ytd-topbar-menu-button-renderer
 /* Sidebar */
 
 /* Hide Home Panel */
-html[data-zm-yt_sidebar_hideHomePanel] ytd-guide-section-renderer:has(a[href="/"]) {
+html[data-zm-yt_sidebar_hideHomePanel] ytd-guide-section-renderer:has(a[href="/"]),
+html[data-zm-yt_sidebar_hideHomePanel] ytd-mini-guide-entry-renderer:has(a[href="/"]),
+html[data-zm-yt_sidebar_hideHomePanel] ytd-mini-guide-entry-renderer:has(a[href="/shorts/"]) {
   display: none !important;
 }
 
@@ -86,7 +88,8 @@ html[data-zm-yt_sidebar_hideSubscriptionsPanel] ytd-mini-guide-entry-renderer:ha
 }
 
 /* Hide You Panel */
-html[data-zm-yt_sidebar_hideYouPanel] ytd-guide-section-renderer:has(a[href="/feed/you"]) {
+html[data-zm-yt_sidebar_hideYouPanel] ytd-guide-section-renderer:has(a[href="/feed/you"]),
+html[data-zm-yt_sidebar_hideYouPanel] ytd-mini-guide-entry-renderer:has(a[href="/feed/you"]) {
   display: none !important;
 }
 
