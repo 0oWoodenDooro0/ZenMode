@@ -132,7 +132,7 @@ html[data-zm-yt_sidebar_hideExplorePanel] ytd-guide-section-renderer:has(a[href*
 }
 
 /* Hide Youtube Panel */
-html[data-zm-yt_sidebar_hideYoutubePanel] ytd-guide-section-renderer:has(a[href="/premium"]) {
+html[data-zm-yt_sidebar_hideYoutubePanel] ytd-guide-section-renderer:has(a[href*="studio.youtube.com"]) {
   display: none !important;
 }
 
