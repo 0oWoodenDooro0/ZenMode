@@ -16,7 +16,7 @@ const siteConfig = [
       {
         name: "Header",
         options: [
-          { id: "hideSidebarButton", label: "Hide Sidebar Button", default: false },
+          { id: "hideSidebar", label: "Hide Sidebar", default: false },
           { id: "hideYoutubeLogo", label: "Hide Youtube Logo", default: false },
           { id: "hideSearchBar", label: "Hide Search Bar", default: false },
           { id: "hideMircophoneSearchIcon", label: "Hide Mircophone Search Icon", default: false },

@@ -26,8 +26,15 @@ html[data-zm-yt_home_hideAds] ytd-rich-section-renderer:has(ytd-ad-slot-renderer
 /* Header */
 
 /* Hide Sidebar Button */
-html[data-zm-yt_header_hideSidebarButton] yt-icon-button#guide-button {
+html[data-zm-yt_header_hideSidebar] yt-icon-button#guide-button,
+html[data-zm-yt_header_hideSidebar] tp-yt-app-drawer#guide,
+html[data-zm-yt_header_hideSidebar] ytd-mini-guide-renderer {
   display: none !important;
+}
+
+html[data-zm-yt_header_hideSidebar] ytd-app {
+  --ytd-persistent-guide-width: 0px !important;
+  --ytd-mini-guide-width: 0px !important;
 }
 
 /* Hide Youtube Logo */
