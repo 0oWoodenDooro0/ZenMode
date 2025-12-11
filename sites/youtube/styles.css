@@ -260,12 +260,14 @@ html[data-zm-yt_video_hideComments] #comments {
 }
 
 /* Hide Comments Avatars */
-html[data-zm-yt_video_hideCommentsAvatars] #comments #author-thumbnail-button {
+html[data-zm-yt_video_hideCommentsAvatars] #comments #author-thumbnail-button,
+html[data-zm-yt_video_hideCommentsAvatars] #comments #author-thumbnail {
   display: none !important;
 }
 
 /* Hide Comments Replies */
-html[data-zm-yt_video_hideCommentsReplies] #comments #replies:has(ytd-comment-replies-renderer) {
+html[data-zm-yt_video_hideCommentsReplies] #comments #replies:has(ytd-comment-replies-renderer),
+html[data-zm-yt_video_hideCommentsReplies] #comments #author-thumbnail div.threadline:not([hidden]) {
   display: none !important;
 }
 
