@@ -277,12 +277,17 @@ html[data-zm-yt_video_hideAdPanel] #secondary #player-ads {
 }
 
 /* Hide Suggested Videos Tabs */
-html[data-zm-yt_video_hideSuggestedVideosTabs] #secondary ytd-watch-next-secondary-results-renderer #items yt-related-chip-cloud-renderer {
+html[data-zm-yt_video_hideSuggestedVideosTabs] ytd-watch-next-secondary-results-renderer #items yt-related-chip-cloud-renderer {
+  display: none !important;
+}
+
+/* Hide Suggested Shorts */
+html[data-zm-yt_video_hideSuggestedShorts] ytd-watch-next-secondary-results-renderer #items ytd-reel-shelf-renderer {
   display: none !important;
 }
 
 /* Hide Suggested Videos */
-html[data-zm-yt_video_hideSuggestedVideos] #secondary ytd-watch-next-secondary-results-renderer {
+html[data-zm-yt_video_hideSuggestedVideos] ytd-watch-next-secondary-results-renderer {
   display: none !important;
 }
 

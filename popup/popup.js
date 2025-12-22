@@ -77,6 +77,7 @@ const siteConfig = [
           { id: "hideCommentsReplies", label: "Hide Comments Replies", default: false },
           { id: "hideAdPanel", label: "Hide Ad Panel", default: false },
           { id: "hideSuggestedVideosTabs", label: "Hide Suggested Videos Tabs", default: false },
+          { id: "hideSuggestedShorts", label: "Hide Suggested Shorts", default: false },
           { id: "hideSuggestedVideos", label: "Hide Suggested Videos", default: false },
         ]
       },
