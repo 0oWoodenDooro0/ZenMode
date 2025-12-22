@@ -137,7 +137,7 @@ html[data-zm-yt_sidebar_hideDownloadsButton] ytd-guide-entry-renderer:has(a[href
 }
 
 /* Hide Clips Button */
-html[data-zm-yt_sidebar_hideClipsButton] #guide-content ytd-guide-collapsible-entry-renderer:has(#expanded) {
+html[data-zm-yt_sidebar_hideClipsButton] #guide-content ytd-guide-section-renderer:has(a[href="/feed/you"]) ytd-guide-collapsible-entry-renderer:has(#expanded) {
   display: none !important;
 }
 
