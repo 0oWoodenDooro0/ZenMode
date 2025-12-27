@@ -71,6 +71,7 @@ const siteConfig = [
           { id: "hideReportButton", label: "Hide Report Button", default: false },
           { id: "hideCollaspedButton", label: "Hide Collasped Button", default: false },
           { id: "hideDescription", label: "Hide Descritption", default: false },
+          { id: "hideLivePremiumChat", label: "Hide Live/Premium Chat", default: false },
           { id: "hideGameAndCategory", label: "Hide Game And Category", default: false },
           { id: "hideComments", label: "Hide Comments", default: false },
           { id: "hideCommentsAvatars", label: "Hide Comments Avatars", default: false },

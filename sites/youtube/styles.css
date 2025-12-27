@@ -245,7 +245,13 @@ html[data-zm-yt_video_hideCollaspedButton] #actions-inner yt-button-shape#button
 }
 
 /* Hide Description */
-html[data-zm-yt_video_hideDescription] #bottom-row {
+html[data-zm-yt_video_hideDescription] #above-the-fold #bottom-row #description {
+  display: none !important;
+}
+
+/* Hide Live/Premium Chat */
+html[data-zm-yt_video_hideLivePremiumChat] #secondary #chat-container,
+html[data-zm-yt_video_hideLivePremiumChat] #above-the-fold #bottom-row #teaser-carousel{
   display: none !important;
 }
 
