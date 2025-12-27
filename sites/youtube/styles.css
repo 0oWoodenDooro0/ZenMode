@@ -1,7 +1,7 @@
 /* Home */
 
 /* Hide Tabs */
-html[data-zm-yt_home_hideTabs] #primary #header {
+html[data-zm-yt_home_hideTabs] #primary ytd-rich-grid-renderer #header {
   display: none !important;
 }
 html[data-zm-yt_home_hideTabs] #frosted-glass.with-chipbar.ytd-app {
