@@ -210,6 +210,12 @@ html[data-zm-yt_video_hideShareButton] #top-level-buttons-computed yt-button-vie
   display: none !important;
 }
 
+/* Hide Ask Button */
+html[data-zm-yt_video_hideAskButton] #flexible-item-buttons yt-button-view-model:has(path[d="M480-80q0-83-31.5-156T363-363q-54-54-127-85.5T80-480q83 0 156-31.5T363-597q54-54 85.5-127T480-880q0 83 31.5 156T597-597q54 54 127 85.5T880-480q-83 0-156 31.5T597-363q-54 54-85.5 127T480-80Z"]),
+html[data-zm-yt_video_hideAskButton] ytd-menu-service-item-renderer:has(path[d="M480-80q0-83-31.5-156T363-363q-54-54-127-85.5T80-480q83 0 156-31.5T363-597q54-54 85.5-127T480-880q0 83 31.5 156T597-597q54 54 127 85.5T880-480q-83 0-156 31.5T597-363q-54 54-85.5 127T480-80Z"]) {
+  display: none !important;
+}
+
 /* Hide Save Button */
 html[data-zm-yt_video_hideSaveButton] #flexible-item-buttons yt-button-view-model:has(path[d="M19 2H5a2 2 0 00-2 2v16.887c0 1.266 1.382 2.048 2.469 1.399L12 18.366l6.531 3.919c1.087.652 2.469-.131 2.469-1.397V4a2 2 0 00-2-2ZM5 20.233V4h14v16.233l-6.485-3.89-.515-.309-.515.309L5 20.233Z"]),
 html[data-zm-yt_video_hideSaveButton] ytd-menu-service-item-renderer:has(path[d="M19 2H5a2 2 0 00-2 2v16.887c0 1.266 1.382 2.048 2.469 1.399L12 18.366l6.531 3.919c1.087.652 2.469-.131 2.469-1.397V4a2 2 0 00-2-2ZM5 20.233V4h14v16.233l-6.485-3.89-.515-.309-.515.309L5 20.233Z"]) {

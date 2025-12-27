@@ -64,6 +64,7 @@ const siteConfig = [
           { id: "hideSubscribedButton", label: "Hide Subscribed Button", default: false },
           { id: "hideLikesDislikesButton", label: "Hide Likes/Dislikes Button", default: false },
           { id: "hideShareButton", label: "Hide Share Button", default: false },
+          { id: "hideAskButton", label: "Hide Ask Button", default: false },
           { id: "hideSaveButton", label: "Hide Save Button", default: false },
           { id: "hideThanksButton", label: "Hide Thanks Button", default: false },
           { id: "hideDownloadButton", label: "Hide Download Button", default: false },
