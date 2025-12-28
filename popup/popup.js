@@ -12,7 +12,7 @@ const siteConfig = [
           { id: "hideShorts", label: "Hide Shorts", default: false },
           { id: "hideAds", label: "Hide Ads", default: false },
           { id: "videosPerRowAuto", label: "Video Per Row Auto", type: "checkbox", default: false },
-          { id: "videosPerRow", label: "Video Per Row", type: "range", min: 3, max: 8, default: 4 },
+          { id: "videosPerRow", label: "Video Per Row", type: "range", min: 3, max: 8, default: 3 },
         ]
       },
       {
