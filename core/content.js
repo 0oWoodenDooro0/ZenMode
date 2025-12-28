@@ -24,10 +24,16 @@ window.ZenEngine = {
 
   updateAttribute: function (key, value) {
     const attrName = `data-zm-${key}`;
-    if (value) {
+    const varName = `--zm-${key}`;
+
+    if (value === false) {
+      document.documentElement.removeAttribute(attrName);
+      document.documentElement.style.removeProperty(varName);
+    } else if (value === true) {
       document.documentElement.setAttribute(attrName, "true");
     } else {
-      document.documentElement.removeAttribute(attrName);
+      document.documentElement.setAttribute(attrName, value);
+      document.documentElement.style.setProperty(varName, value);
     }
   },
 

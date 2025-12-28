@@ -11,6 +11,8 @@ const siteConfig = [
           { id: "hideAllVideos", label: "Hide All Video", default: false },
           { id: "hideShorts", label: "Hide Shorts", default: false },
           { id: "hideAds", label: "Hide Ads", default: false },
+          { id: "videosPerRowAuto", label: "Video Per Row Auto", type: "checkbox", default: false },
+          { id: "videosPerRow", label: "Video Per Row", type: "range", min: 3, max: 8, default: 4 },
         ]
       },
       {
@@ -163,6 +165,7 @@ async function renderOptions(siteKey, config, container) {
 
     category.options.forEach(opt => {
       const fullId = `${config.prefix}_${category.name.toLowerCase()}_${opt.id}`;
+      const inputType = opt.type || 'checkbox';
 
       const itemDiv = document.createElement('div');
       itemDiv.className = 'option-item';
@@ -171,31 +174,71 @@ async function renderOptions(siteKey, config, container) {
       labelSpan.className = 'option-label';
       labelSpan.textContent = opt.label;
 
-      const labelSwitch = document.createElement('label');
-      labelSwitch.className = 'switch';
+      let inputControl;
 
-      const input = document.createElement('input');
-      input.type = 'checkbox';
-      input.id = fullId;
+      if (inputType === 'checkbox') {
+        const labelSwitch = document.createElement('label');
+        labelSwitch.className = 'switch';
 
-      if (currentSettings.hasOwnProperty(fullId)) {
-        input.checked = currentSettings[fullId];
-      } else {
-        input.checked = opt.default;
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.id = fullId;
+
+        if (currentSettings.hasOwnProperty(fullId)) {
+          input.checked = currentSettings[fullId];
+        } else {
+          input.checked = opt.default;
+        }
+
+        input.addEventListener('change', (e) => {
+          saveSetting(siteKey, fullId, e.target.checked);
+          updateUiState(siteKey, config);
+        });
+
+        const slider = document.createElement('span');
+        slider.className = 'slider';
+
+        labelSwitch.appendChild(input);
+        labelSwitch.appendChild(slider);
+        inputControl = labelSwitch;
+
+      } else if (inputType === 'range') {
+        const rangeContainer = document.createElement('div');
+        rangeContainer.style.display = 'flex';
+        rangeContainer.style.alignItems = 'center';
+        rangeContainer.style.gap = '8px';
+
+        const input = document.createElement('input');
+        input.type = 'range';
+        input.id = fullId;
+        input.min = opt.min;
+        input.max = opt.max;
+        input.style.width = '100px';
+
+        if (currentSettings.hasOwnProperty(fullId)) {
+          input.value = currentSettings[fullId];
+        } else {
+          input.value = opt.default;
+        }
+
+        const valueDisplay = document.createElement('span');
+        valueDisplay.textContent = input.value;
+        valueDisplay.style.fontSize = '12px';
+        valueDisplay.style.color = '#94a3b8';
+        valueDisplay.style.minWidth = '12px';
+
+        input.addEventListener('input', (e) => {
+          valueDisplay.textContent = e.target.value;
+          saveSetting(siteKey, fullId, e.target.value);
+        });
+
+        rangeContainer.appendChild(valueDisplay);
+        rangeContainer.appendChild(input);
+        inputControl = rangeContainer;
       }
 
-      input.addEventListener('change', (e) => {
-        saveSetting(siteKey, fullId, e.target.checked);
-      });
-
-      const slider = document.createElement('span');
-      slider.className = 'slider';
-
-      labelSwitch.appendChild(input);
-      labelSwitch.appendChild(slider);
-
       itemDiv.appendChild(labelSpan);
-      itemDiv.appendChild(labelSwitch);
+      itemDiv.appendChild(inputControl);
 
       optionsGroup.appendChild(itemDiv);
     });
@@ -204,6 +247,26 @@ async function renderOptions(siteKey, config, container) {
     section.appendChild(optionsGroup);
     container.appendChild(section);
   });
+
+  updateUiState(siteKey, config);
+}
+
+function updateUiState(siteKey, config) {
+  const autoCheckboxId = `${config.prefix}_home_videosPerRowAuto`;
+  const sliderId = `${config.prefix}_home_videosPerRow`;
+
+  const autoCheckbox = document.getElementById(autoCheckboxId);
+  const sliderInput = document.getElementById(sliderId);
+
+  if (autoCheckbox && sliderInput) {
+    if (autoCheckbox.checked) {
+      sliderInput.disabled = true;
+      sliderInput.style.opacity = '0.5';
+    } else {
+      sliderInput.disabled = false;
+      sliderInput.style.opacity = '1';
+    }
+  }
 }
 
 async function saveSetting(siteKey, fullId, value) {
@@ -233,7 +296,7 @@ async function resetSettings(siteKey, config) {
 
   config.categories.forEach(cat => {
     cat.options.forEach(opt => {
-      const fullId = `${config.prefix}_${opt.id}`;
+      const fullId = `${config.prefix}_${cat.name.toLowerCase()}_${opt.id}`;
       defaultSettings[fullId] = opt.default;
     });
   });
@@ -241,7 +304,7 @@ async function resetSettings(siteKey, config) {
   await chrome.storage.local.set({ [storageKey]: defaultSettings });
 
   const container = document.getElementById('options-container');
-  renderOptions(siteKey, config, container);
+  await renderOptions(siteKey, config, container);
 
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
