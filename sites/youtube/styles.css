@@ -301,6 +301,11 @@ html[data-zm-yt_video_hideGameAndCategory] #below ytd-metadata-row-container-ren
   display: none !important;
 }
 
+/* Hide Store */
+html[data-zm-yt_video_hideStore] #below ytd-merch-shelf-renderer {
+  display: none !important;
+}
+
 /* Hide Comments */
 html[data-zm-yt_video_hideComments] #comments {
   display: none !important;

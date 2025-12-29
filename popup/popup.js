@@ -76,6 +76,7 @@ const siteConfig = [
           { id: "hideDescription", label: "Hide Descritption", default: false },
           { id: "hideLivePremiumChat", label: "Hide Live/Premium Chat", default: false },
           { id: "hideGameAndCategory", label: "Hide Game And Category", default: false },
+          { id: "hideStore", label: "Hide Store", default: false },
           { id: "hideComments", label: "Hide Comments", default: false },
           { id: "hideCommentsAvatars", label: "Hide Comments Avatars", default: false },
           { id: "hideCommentsReplies", label: "Hide Comments Replies", default: false },
