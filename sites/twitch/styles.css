@@ -1,11 +1,141 @@
-/* Twitch Styles */
+/* Home */
+
+/* Hide All Stream */
+html[data-zm-tw_home_hideallstream] main.twilight-main {
+  display: none !important;
+}
+
+/* Hide Carousel */
+html[data-zm-tw_home_hidecarousel] div[data-a-target="front-page-carousel"] {
+  display: none !important;
+}
 
 /* Header */
 
+/* Hide Twitch Logo */
+html[data-zm-tw_header_hidetwitchlogo] a[data-a-target="home-link"] {
+  display: none !important;
+}
+
+/* Hide Following */
+html[data-zm-tw_header_hidefollowing] .fRzsnK:has(a[data-a-target="following-link"]) {
+  display: none !important;
+}
+
+/* Hide Browse */
+html[data-zm-tw_header_hidebrowse] .fRzsnK:has(a[data-a-target="browse-link"]) {
+  display: none !important;
+}
+
+/* Hide More Options */
+html[data-zm-tw_header_hidemoreoptions] .jNQxNh:has(button[data-a-target="ellipsis-button"]) {
+  display: none !important;
+}
+
+/* Hide Search Bar */
+html[data-zm-tw_header_hideSearchBar] .hCMJIV {
+  display: none !important;
+}
+
+/* Hide Luna Icon */
+html[data-zm-tw_header_hidelunaicon] .VxLcr:has(.prime-offers) {
+  display: none !important;
+}
+
+/* Hide Notifications Icon */
+html[data-zm-tw_header_hidenotificationsicon] .VxLcr:has(.onsite-notifications) {
+  display: none !important;
+}
+
+/* Hide Whispers Icon */
+html[data-zm-tw_header_hidewhispersicon] .VxLcr:has(.bWprIP) {
+  display: none !important;
+}
+
+/* Hide Bits Icon */
+html[data-zm-tw_header_hidebitsicon] .VxLcr:has(.ihSefD) {
+  display: none !important;
+}
+
+/* Hide Turbo Icon */
+html[data-zm-tw_header_hideturboicon] .VxLcr:has(path[d="m13 8-5.349 3.12a.5.5 0 0 0-.048.832L9 13l-1 3 5.35-3.12a.5.5 0 0 0 .047-.832L12 11l1-3Z"]) {
+  display: none !important;
+}
+
+/* Hide Account Icon */
+html[data-zm-tw_header_hideaccounticon] .hdaUxc {
+  display: none !important;
+}
+
 /* Sidebar */
 
-/* Main */
+/* Hide Followed Channels */
+html[data-zm-tw_sidebar_hidefollowedchannels] #side-nav .side-nav-section:has(path[d="m12 6.429 1.036-1.006A5.076 5.076 0 0 1 16.57 4H17c2.761 0 5 2.175 5 4.857v.417a4.788 4.788 0 0 1-1.465 3.434L12 21l-8.536-8.292A4.788 4.788 0 0 1 2 9.274v-.417C2 6.175 4.239 4 7 4h.429c1.326 0 2.597.512 3.535 1.422L12 6.429Zm-2.43.428A3.076 3.076 0 0 0 7.43 6H7C5.288 6 4 7.333 4 8.857v.417c0 .739.302 1.46.858 2L12 18.212l7.142-6.938c.556-.54.858-1.261.858-2v-.417C20 7.333 18.712 6 17 6h-.429c-.814 0-1.583.315-2.142.857L12 9.217l-2.43-2.36Z"]),
+html[data-zm-tw_sidebar_hidefollowedchannels] #side-nav .side-nav-section:has(.followed-side-nav-header--expanded) {
+  display: none !important;
+}
 
-/* Player */
+/* Hide Live Channels */
+html[data-zm-tw_sidebar_hidelivechannels] #side-nav .side-nav-section:has(path[d="M18 15v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3l4-2v10l-4-2ZM4 6h12v12H4V6Z"]),
+html[data-zm-tw_sidebar_hidelivechannels] #side-nav .side-nav-section:has(a[data-a-id^="recommended-channel-"]) {
+  display: none !important;
+}
 
-/* Chat */
+/* Hide Recommended Categories */
+html[data-zm-tw_sidebar_hiderecommendedcategories] #side-nav .side-nav-section:has(path[d="M7 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8Zm2 0h10v12H9V8Z"]),
+html[data-zm-tw_sidebar_hiderecommendedcategories] #side-nav .side-nav-section:has(div[data-a-target="side-nav-header-expanded"]):not(:has(a[data-a-id^="recommended-channel-"])):not(:has(.followed-side-nav-header--expanded)) {
+  display: none !important;
+}
+
+/* Stream */
+
+/* Hide Follow Button */
+html[data-zm-tw_stream_hidefollowbutton] #live-channel-stream-information div.csXQOq:has(button[data-a-target="follow-button"]) {
+  display: none !important;
+}
+
+/* Hide Followed Button */
+html[data-zm-tw_stream_hidefollowedbutton] #live-channel-stream-information div.dPMgk:has(button[data-a-target="unfollow-button"]) {
+  display: none !important;
+}
+
+/* Hide Notification Button */
+html[data-zm-tw_stream_hidenotificationbutton] #live-channel-stream-information div.kCBkGE:has(button.yezmM) {
+  display: none !important;
+}
+
+/* Hide Bits Button */
+html[data-zm-tw_stream_hidebitsbutton] #live-channel-stream-information div.gWaIYG:has(button[data-a-target="top-nav-get-bits-button"]) {
+  display: none !important;
+}
+
+/* Hide Gift Button */
+html[data-zm-tw_stream_hidegiftbutton] #live-channel-stream-information div.kaAEut:has(button[data-a-target="gift-button"]) {
+  display: none !important;
+}
+
+/* Hide Subscribe Button */
+html[data-zm-tw_stream_hidesubscribebutton] #live-channel-stream-information div.PiZST:has(button[data-a-target="subscribe-button"]) {
+  display: none !important;
+}
+
+/* Hide Share Button */
+html[data-zm-tw_stream_hidesharebutton] #live-channel-stream-information button.gMErFN[data-a-target="share-button"] {
+  display: none !important;
+}
+
+/* Hide More Options Button */
+html[data-zm-tw_stream_hidemoreoptionsbutton] #live-channel-stream-information button.glPhvE[data-a-target="report-button-more-button"] {
+  display: none !important;
+}
+
+/* Hide About Panel */
+html[data-zm-tw_stream_hideaboutpanel] #live-channel-about-panel {
+  display: none !important;
+}
+
+/* Hide Channel Panels */
+html[data-zm-tw_stream_hidechannelpanels] .channel-panels-container {
+  display: none !important;
+}
+

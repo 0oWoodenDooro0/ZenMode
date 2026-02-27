@@ -98,7 +98,54 @@ const siteConfig = [
     regex: /twitch\.tv$/,
     siteKey: "twitch",
     prefix: "tw",
-    categories: []
+    categories: [
+      {
+        name: "Home",
+        options: [
+          { id: "hideAllStream", label: "Hide All Stream", default: false },
+          { id: "hideCarousel", label: "Hide Carousel", default: false },
+        ]
+      },
+      {
+        name: "Header",
+        options: [
+          { id: "hideTwitchLogo", label: "Hide Twitch Logo", default: false },
+          { id: "hideFollowing", label: "Hide Following", default: false },
+          { id: "hideBrowse", label: "Hide Browse", default: false },
+          { id: "hideMoreOptions", label: "Hide More Options", default: false },
+          { id: "hideSearchBar", label: "Hide Search Bar", default: false },
+          { id: "hideLunaIcon", label: "Hide Luna Icon", default: false },
+          { id: "hideNotificationsIcon", label: "Hide Notifications Icon", default: false },
+          { id: "hideWhispersIcon", label: "Hide Whispers Icon", default: false },
+          { id: "hideBitsIcon", label: "Hide Bits Icon", default: false },
+          { id: "hideTurboIcon", label: "Hide Turbo Icon", default: false },
+          { id: "hideAccountIcon", label: "Hide Account Icon", default: false }
+        ]
+      },
+      {
+        name: "Sidebar",
+        options: [
+          { id: "hideFollowedChannels", label: "Hide Followed Channels", default: false },
+          { id: "hideLiveChannels", label: "Hide Live Channels", default: false },
+          { id: "hideRecommendedCategories", label: "Hide Recommended Categories", default: false },
+        ]
+      },
+      {
+        name: "Stream",
+        options: [
+          { id: "hideFollowButton", label: "Hide Follow Button", default: false },
+          { id: "hideFollowedButton", label: "Hide Followed Button", default: false },
+          { id: "hideNotificationButton", label: "Hide Notification Button", default: false },
+          { id: "hideBitsButton", label: "Hide Bits Button", default: false },
+          { id: "hideGiftButton", label: "Hide Gift Button", default: false },
+          { id: "hideSubscribeButton", label: "Hide Subscribe Button", default: false },
+          { id: "hideShareButton", label: "Hide Share Button", default: false },
+          { id: "hideMoreOptionsButton", label: "Hide More Options Button", default: false },
+          { id: "hideAboutPanel", label: "Hide About Panel", default: false },
+          { id: "hideChannelPanels", label: "Hide Channel Panels", default: false },
+        ]
+      },
+    ]
   }
 ];
 
