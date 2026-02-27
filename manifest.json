@@ -9,7 +9,8 @@
     "activeTab"
   ],
   "host_permissions": [
-    "*://*.youtube.com/*"
+    "*://*.youtube.com/*",
+    "*://*.twitch.tv/*"
   ],
   "browser_specific_settings": {
     "gecko": {
@@ -43,6 +44,19 @@
       ],
       "css": [
         "sites/youtube/styles.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.twitch.tv/*"
+      ],
+      "js": [
+        "core/content.js",
+        "sites/twitch/main.js"
+      ],
+      "css": [
+        "sites/twitch/styles.css"
       ],
       "run_at": "document_start"
     }
