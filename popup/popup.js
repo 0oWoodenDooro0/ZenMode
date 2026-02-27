@@ -93,6 +93,12 @@ const siteConfig = [
         ]
       },
     ]
+  },
+  {
+    regex: /twitch\.tv$/,
+    siteKey: "twitch",
+    prefix: "tw",
+    categories: []
   }
 ];
 
