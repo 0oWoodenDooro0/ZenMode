@@ -3,7 +3,7 @@
   "name": "ZenMode",
   "version": "2.0",
   "homepage_url": "https://zenmode.woodendoor.website",
-  "description": "Customizable UI toggles for YouTube.",
+  "description": "Customizable UI toggles for YouTube and Twitch.",
   "permissions": [
     "storage",
     "activeTab"
