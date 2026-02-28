@@ -154,20 +154,55 @@ const siteConfig = [
     categories: [
       {
         name: "Home",
-        options: []
+        options: [
+          { id: "hideHeaderChannels", label: "Hide Header Channels", default: false },
+          { id: "hideCustomerService", label: "Hide Customer Service", default: false }
+        ]
       },
       {
         name: "Header",
-        options: []
-      },
-      {
-        name: "Sidebar",
-        options: []
+        options: [
+          { id: "hideBiliBiliHome", label: "Hide BiliBili Home", default: false },
+          { id: "hideAnime", label: "Hide Anime", default: false },
+          { id: "hideLive", label: "Hide Live", default: false },
+          { id: "hideGame", label: "Hide Game", default: false },
+          { id: "hideShop", label: "Hide Shop", default: false },
+          { id: "hideManga", label: "Hide Manga", default: false },
+          { id: "hideEsports", label: "Hide Esports", default: false },
+          { id: "hideDownloadClient", label: "Hide Download Client", default: false },
+          { id: "hideSearchBar", label: "Hide Search Bar", default: false },
+          { id: "hideAccountAvatar", label: "Hide Account Avatar", default: false },
+          { id: "hideBigMember", label: "Hide Big Member", default: false },
+          { id: "hideMessage", label: "Hide Message", default: false },
+          { id: "hideDynamic", label: "Hide Dynamic", default: false },
+          { id: "hideFavorite", label: "Hide Favorite", default: false },
+          { id: "hideHistory", label: "Hide History", default: false },
+          { id: "hideCreatorCenter", label: "Hide Creator Center", default: false },
+          { id: "hideUpload", label: "Hide Upload", default: false }
+        ]
       },
       {
         name: "Video",
-        options: []
-      },
+        options: [
+          { id: "hidedanmuinput", label: "Hide Danmu Input", default: false },
+          { id: "hidelikebutton", label: "Hide Like Button", default: false },
+          { id: "hidecoinbutton", label: "Hide Coin Button", default: false },
+          { id: "hidefavoritebutton", label: "Hide Favorite Button", default: false },
+          { id: "hidesharebutton", label: "Hide Share Button", default: false },
+          { id: "hidecomplaintbutton", label: "Hide Complaint Button", default: false },
+          { id: "hidenotebutton", label: "Hide Note Button", default: false },
+          { id: "hidemorebutton", label: "Hide More Button", default: false },
+          { id: "hidedescription", label: "Hide Description", default: false },
+          { id: "hidetags", label: "Hide Tags", default: false },
+          { id: "hidecomments", label: "Hide Comments", default: false },
+          { id: "hidesendmessage", label: "Hide Send Message", default: false },
+          { id: "hidechargebutton", label: "Hide Charge Button", default: false },
+          { id: "hidefollowbutton", label: "Hide Follow Button", default: false },
+          { id: "hidefollowedbutton", label: "Hide Followed Button", default: false },
+          { id: "hidedanmulist", label: "Hide Danmu List", default: false },
+          { id: "hiderecommendedvideos", label: "Hide Recommended Videos", default: false }
+        ]
+      }
     ]
   }
 ];
