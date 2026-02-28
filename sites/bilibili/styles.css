@@ -1,0 +1,190 @@
+/* Home */
+
+/* Hide Header Channels */
+html[data-zm-bi_home_hideheaderchannels] .bili-header__channel,
+html[data-zm-bi_home_hideheaderchannels] .header-channel {
+  display: none !important;
+}
+html[data-zm-bi_home_hideheaderchannels] main.bili-feed4-layout {
+  margin-top: 25px !important;
+}
+
+/* Hide Customer Service */
+html[data-zm-bi_home_hidecustomerservice] .palette-button-wrap .storage-box {
+  display: none !important;
+}
+
+/* Header */
+
+/* Hide BiliBili Home */
+html[data-zm-bi_header_hidebilibilihome] ul.left-entry li:has(a[href="//www.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Anime */
+html[data-zm-bi_header_hideanime] ul.left-entry li:has(a[href^="//www.bilibili.com/anime"]) {
+  display: none !important;
+}
+
+/* Hide Live */
+html[data-zm-bi_header_hidelive] ul.left-entry li:has(a[href="//live.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Game */
+html[data-zm-bi_header_hidegame] ul.left-entry li:has(a[href="//game.bilibili.com/platform"]) {
+  display: none !important;
+}
+
+/* Hide Shop */
+html[data-zm-bi_header_hideshop] ul.left-entry li:has(a[href*="//show.bilibili.com/platform/home.html"]) {
+  display: none !important;
+}
+
+/* Hide Manga */
+html[data-zm-bi_header_hidemanga] ul.left-entry li:has(a[href*="//manga.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Esports */
+html[data-zm-bi_header_hideesports] ul.left-entry li:has(a[href*="//www.bilibili.com/match/home"]) {
+  display: none !important;
+}
+
+/* Hide Download Client */
+html[data-zm-bi_header_hidedownloadclient] ul.left-entry li:has(a[href="//app.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Search Bar */
+html[data-zm-bi_header_hidesearchbar] div.center-search-container {
+  display: none !important;
+}
+
+/* Hide Account Avatar */
+html[data-zm-bi_header_hideaccountavatar] ul.right-entry li:has(a[href^="//space.bilibili.com"]:not([href$="/favlist"])) {
+  display: none !important;
+}
+
+/* Hide Big Member */
+html[data-zm-bi_header_hidebigmember] ul.right-entry div:has(a[href="//account.bilibili.com/big"]) {
+  display: none !important;
+}
+
+/* Hide Message */
+html[data-zm-bi_header_hidemessage] ul.right-entry li:has(a[href="//message.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Dynamic */
+html[data-zm-bi_header_hidedynamic] ul.right-entry li:has(a[href*="//t.bilibili.com"]) {
+  display: none !important;
+}
+
+/* Hide Favorite */
+html[data-zm-bi_header_hidefavorite] ul.right-entry li:has(a[href^="//space.bilibili.com/"][href$="/favlist"]) {
+  display: none !important;
+}
+
+/* Hide History */
+html[data-zm-bi_header_hidehistory] ul.right-entry li:has(a[href="//www.bilibili.com/history"]) {
+  display: none !important;
+}
+
+/* Hide Creator Center */
+html[data-zm-bi_header_hidecreatorcenter] ul.right-entry li:has(a[href*="//member.bilibili.com/platform/home"]) {
+  display: none !important;
+}
+
+/* Hide Upload */
+html[data-zm-bi_header_hideupload] ul.right-entry li:has(a[href^="//member.bilibili.com/platform/upload"]) {
+  display: none !important;
+}
+
+/* Video */
+
+/* Hide Danmu Input */
+html[data-zm-bi_video_hidedanmuinput] .bpx-player-sending-area .bpx-player-video-inputbar {
+  display: none !important;
+}
+
+/* Hide Like Button */
+html[data-zm-bi_video_hidelikebutton] #arc_toolbar_report .video-toolbar-left div.toolbar-left-item-wrap:has(div.video-like) {
+  display: none !important;
+}
+
+/* Hide Coin Button */
+html[data-zm-bi_video_hidecoinbutton] #arc_toolbar_report .video-toolbar-left div.toolbar-left-item-wrap:has(div.video-coin) {
+  display: none !important;
+}
+
+/* Hide Favorite Button */
+html[data-zm-bi_video_hidefavoritebutton] #arc_toolbar_report .video-toolbar-left div.toolbar-left-item-wrap:has(div.video-fav) {
+  display: none !important;
+}
+
+/* Hide Share Button */
+html[data-zm-bi_video_hidesharebutton] #arc_toolbar_report .video-toolbar-left div.toolbar-left-item-wrap:has(div.video-share-wrap) {
+  display: none !important;
+}
+
+/* Hide Complaint Button */
+html[data-zm-bi_video_hidecomplaintbutton] #arc_toolbar_report .video-toolbar-right div.video-complaint {
+  display: none !important;
+}
+
+/* Hide Note Button */
+html[data-zm-bi_video_hidenotebutton] #arc_toolbar_report .video-toolbar-right div.video-note {
+  display: none !important;
+}
+
+/* Hide More Button */
+html[data-zm-bi_video_hidemorebutton] #arc_toolbar_report .video-toolbar-right div.video-tool-more {
+  display: none !important;
+}
+
+/* Hide Description */
+html[data-zm-bi_video_hidedescription] #v_desc {
+  display: none !important;
+}
+
+/* Hide Tags */
+html[data-zm-bi_video_hidetags] .video-tag-container {
+  display: none !important;
+}
+
+/* Hide Comments */
+html[data-zm-bi_video_hidecomments] #commentapp {
+  display: none !important;
+}
+
+/* Hide Send Message */
+html[data-zm-bi_video_hidesendmessage] .right-container .up-info-container .send-msg {
+  display: none !important;
+}
+
+/* Hide Charge Button */
+html[data-zm-bi_video_hidechargebutton] .right-container .up-info-container .old-charge-btn,
+html[data-zm-bi_video_hidechargebutton] .right-container .up-info-container .new-charge-btn {
+  display: none !important;
+}
+
+/* Hide Follow Button */
+html[data-zm-bi_video_hidefollowbutton] .right-container .up-info-container .follow-btn.not-follow {
+  display: none !important;
+}
+
+/* Hide Followed Button */
+html[data-zm-bi_video_hidefollowedbutton] .right-container .up-info-container .follow-btn.following {
+  display: none !important;
+}
+
+/* Hide Danmu List */
+html[data-zm-bi_video_hidedanmulist] .right-container #danmukuBox {
+  display: none !important;
+}
+
+/* Hide Recommended Videos */
+html[data-zm-bi_video_hiderecommendedvideos] .right-container .rcmd-tab .recommend-list-v1 {
+  display: none !important;
+}
