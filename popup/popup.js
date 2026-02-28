@@ -146,6 +146,29 @@ const siteConfig = [
         ]
       },
     ]
+  },
+  {
+    regex: /bilibili\.com$/,
+    siteKey: "bilibili",
+    prefix: "bi",
+    categories: [
+      {
+        name: "Home",
+        options: []
+      },
+      {
+        name: "Header",
+        options: []
+      },
+      {
+        name: "Sidebar",
+        options: []
+      },
+      {
+        name: "Video",
+        options: []
+      },
+    ]
   }
 ];
 

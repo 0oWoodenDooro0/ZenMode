@@ -3,14 +3,15 @@
   "name": "ZenMode",
   "version": "2.0",
   "homepage_url": "https://zenmode.woodendoor.website",
-  "description": "Customizable UI toggles for YouTube and Twitch.",
+  "description": "Customizable UI toggles for YouTube, Twitch, and Bilibili.",
   "permissions": [
     "storage",
     "activeTab"
   ],
   "host_permissions": [
     "*://*.youtube.com/*",
-    "*://*.twitch.tv/*"
+    "*://*.twitch.tv/*",
+    "*://*.bilibili.com/*"
   ],
   "browser_specific_settings": {
     "gecko": {
@@ -57,6 +58,19 @@
       ],
       "css": [
         "sites/twitch/styles.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.bilibili.com/*"
+      ],
+      "js": [
+        "core/content.js",
+        "sites/bilibili/main.js"
+      ],
+      "css": [
+        "sites/bilibili/styles.css"
       ],
       "run_at": "document_start"
     }
